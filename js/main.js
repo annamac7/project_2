@@ -65,3 +65,57 @@ $(function() {
   */
 
 });
+
+
+var data = [{
+  date: 'Mar. 15, 1933',
+  content: 'Born in Brooklyn, NY'
+}, {
+  date: '1954',
+  content: 'Graduated with a B.A. in government at Cornell'
+}, {
+  date: '1956-58',
+  content: 'Harvard Law School'
+}, {
+  date: '1959',
+  content: 'Columbia Law School'
+}, {
+  date: '1973-80',
+  content: 'General counsel for the ACLU'
+}, {
+  date: '1980-93',
+  content: 'Appointed to the US Court of Appeals by Jimmy Carter'
+}, {
+  date: '1993',
+  content: 'Appointed to the US Supreme Court by Bill Clinton'
+},  {
+  date: '1999',
+  content: 'Given the American Bar Association’s Thurgood Marshall Award'
+}, {
+  date: '2002',
+  content: "Inducted into the National Women's Hallf of fame"
+}, {
+  date: '2010',
+  content: "American Bar Association's medal recipient"
+}, {
+  date: 'Sep. 18, 2020',
+  content: 'Passes away due to complications from metastatic pancreas cancer'
+}];
+
+
+
+$("#my-timeline").roadmap(data, {
+	eventsPerSlide: 5,
+	slide: 1,
+	rootClass: 'roadmap',
+	prevArrow: '<',
+	nextArrow: '>',
+	orientation: 'vertical',
+	onBuild: function() {
+		console.log('on build event');
+	},
+	eventTemplate: '<div class="event">' +
+			'<div class="event__date">####DATE###</div>' +
+			'<div class="event__content">####CONTENT###</div>' +
+		'</div>'
+});
