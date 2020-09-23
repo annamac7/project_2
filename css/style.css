@@ -22,7 +22,7 @@
 	height: 100%;
 	top: 0;
 	left: 0;
-} 
+}
 
 .sl-slide {
 	z-index: 1;
@@ -36,7 +36,7 @@
 	-webkit-box-sizing: content-box;
 	-moz-box-sizing: content-box;
 	box-sizing: content-box;
-	background: #fff;
+	background: #4C6A82;
 	-webkit-backface-visibility: hidden;
 	-moz-backface-visibility: hidden;
 	-o-backface-visibility: hidden;
@@ -105,10 +105,9 @@
 
 /* Default styles for background colors */
 .sl-slide-horizontal .sl-slide-inner {
-	background: #ddd;
+	background: #4C6A82;
 }
 
 .sl-slide-vertical .sl-slide-inner {
-	background: #ccc;
+	background: #4C6A82;
 }
-
