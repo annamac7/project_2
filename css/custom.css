@@ -1,6 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Limelight&display=swap');
+
+
 .sl-slider-wrapper {
   width: 100%;
-  height: 700px;
+  height: 650px;
   overflow: hidden;
   position: relative;
 }
@@ -10,14 +13,15 @@
   padding: 60px 30px 10px 30px;
   /* width: 50%;
   max-width: 960px; */
-  color: #fff;
+  color: #37444E;
   /* margin: 0 auto; */
   position: relative;
   z-index: 100;
 }
 
 .sl-slider h2 {
-  font-size: 72px;
+  font-size: 100px;
+  font-family: 'Limelight', cursive;
 }
 
 .sl-slider blockquote {
@@ -48,9 +52,10 @@
   height: 100%;
   -webkit-background-size: cover;
   -moz-background-size: cover;
-  background-size: cover;
+  background-size:  contain;
+  background-repeat: no-repeat;
   background-position: center center;
-	z-index: -1;
+
 }
 
 /* Custom navigation arrows */
@@ -150,6 +155,9 @@
 /* Content elements */
 .bg-img-1 {
   background-image: url(../images/blob_2.svg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
   background-color: #4C6A82;
 }
 
