@@ -45,10 +45,41 @@ body {
 }
 
 .text-content {
-  width: 70%;
-
+  max-width: 800px;
+  background: green;
 }
+
 
 .slide-img{
   z-index: 4;
+}
+
+
+
+
+/* QUIZ:  */
+
+#quiz-container {
+
+}
+
+#quiz {
+  background-color: lightblue;
+  border-radius: 10px;
+
+}
+
+#quiz-start-btn {
+background: #7698AF;
+}
+.answers a.correct {
+  background: #8CE955;
+}
+
+.answers a.incorrect {
+  background: #E95555;
+}
+
+#quiz-controls {
+  background: #7698AF;
 }

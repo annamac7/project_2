@@ -142,7 +142,7 @@
         }
 
         $('#quiz-response').html(response);
-        $('#quiz-controls').fadeIn();
+        $('#quiz-controls').show("slow");
 
         if (typeof base.options.answerCallback === 'function') {
           base.options.answerCallback(currentQuestion, selected, questions[currentQuestionIndex]);
