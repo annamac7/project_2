@@ -110,7 +110,7 @@ $("#my-timeline").roadmap(data, {
 	rootClass: 'roadmap',
 	prevArrow: '<',
 	nextArrow: '>',
-	orientation: 'vertical',
+	orientation: 'auto',
 	onBuild: function() {
 		console.log('on build event');
 	},
