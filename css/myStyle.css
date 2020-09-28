@@ -46,16 +46,153 @@ body {
 
 .text-content {
   max-width: 800px;
-  background: green;
+
 }
 
+#sl1-bg {
+  filter: invert();
+  opacity: .3;
+  left: 40px;
+  top: 30px;
+}
+
+#rbg {
+  color: navy;
+}
 
 .slide-img{
   z-index: 4;
 }
 
 
+.event__content {
+  font-size: 12px;
+}
 
+.my-content {
+    padding-top: 0px;
+    margin: 60px 60px 0px 60px;
+}
+
+
+.my-content h2 {
+    padding-top: 0px;
+    margin: 48px 48px 20px 0px;
+}
+
+#slide2 {
+  max-width: 650px;
+
+}
+
+#sl2-img {
+  margin: auto;
+  width: 200px;
+  display: block;
+}
+
+ .c-item  {
+   width: 400px;
+   height: 300px;
+   margin: auto;
+   background-repeat: repeat;
+   background-position: center;
+   background-size: cover;
+
+ }
+
+ #c1 {
+   background-image: url("https://i2.wp.com/auburnexaminer.com/wp-content/uploads/2020/09/8b4bb49e52134efc4b7d4d4a8542f213.jpg?resize=1024%2C683&ssl=1") ;
+ }
+
+ #c2 {
+   background-image: url("https://cdn.theatlantic.com/thumbor/FrV1GyxMe2kG28b6zKkTD87cWuI=/1200x810/media/img/photo/2020/09/photos-the-life-of-ruth-bader-ginsb/a09_50477273/original.jpg") ;
+ }
+
+ #c3 {
+   background-image: url("https://cdn.theatlantic.com/thumbor/xNaIbQnbp9W1aeujfoj1887bERw=/1200x814/media/img/photo/2020/09/photos-the-life-of-ruth-bader-ginsb/a12_R426743067/original.jpg");
+ }
+
+#c4 {
+  background-image: url("https://cdn.theatlantic.com/thumbor/uToCqxg1JUHhd8kHkW0W96uE_9o=/1200x799/media/img/photo/2020/09/photos-the-life-of-ruth-bader-ginsb/a14_R1737435347/original.jpg");
+}
+
+/* ACHIEVEMENTS */
+
+#sl3-bg {
+  opacity: .3;
+  top: 0px;
+  right: 0px;
+  margin: 0px;
+  width: 40%;
+  filter: invert();
+}
+
+.flip-box {
+  background-color: transparent;
+  width: 250px;
+  height: 200px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
+/* This container is needed to position the front and back side */
+.flip-box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.flip-box-front, .flip-box-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
+
+}
+
+/* Style the front side */
+.flip-box-front {
+  background-color: lightblue;
+  color: #222;
+}
+
+/* Style the back side */
+.flip-box-back {
+  background-color: aliceBlue;
+  color: #222;
+  transform: rotateY(180deg);
+}
+
+
+.dropdown .btn {
+  background: lightblue;
+  padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.btn-img {
+  max-width: 130px;
+}
 
 /* QUIZ:  */
 
