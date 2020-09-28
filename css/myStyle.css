@@ -191,6 +191,14 @@ background-color: rgba(255, 255, 255, 0.5);
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
 
+
+.flip-box-a {
+  background-color: transparent;
+  width: 250px;
+  height: 250px;
+  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+}
+
 /* This container is needed to position the front and back side */
 .flip-box-inner {
   position: relative;
@@ -199,13 +207,16 @@ background-color: rgba(255, 255, 255, 0.5);
   text-align: center;
   transition: transform 0.8s;
   transform-style: preserve-3d;
-
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
+.flip-box:hover .flip-box-inner, .flip-box-a:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
 }
+
 
 /* Position the front and back side */
 .flip-box-front, .flip-box-back {
@@ -220,6 +231,21 @@ background-color: rgba(255, 255, 255, 0.5);
   align-items: center;
   justify-content: center;
   padding: 15px;
+}
+
+.flip-box-front-a, .flip-box-back-a {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+  border-radius: 50%;
+  display: flex;
+  flex-wrap: wrap;
+  border: darkgoldenrod solid 8px;
+  align-items: center;
+  justify-content: center;
+  padding: 15px;
 
 }
 
@@ -227,6 +253,17 @@ background-color: rgba(255, 255, 255, 0.5);
 .flip-box-front {
   background-color: aliceblue;
   color: #222;
+}
+
+.flip-box-front-a {
+  background: goldenrod;
+  color: #222;
+}
+
+.flip-box-back-a {
+  background: darkgoldenrod;
+  color: #222;
+  transform: rotateY(180deg);
 }
 
 /* Style the back side */
@@ -248,7 +285,11 @@ background-color: rgba(255, 255, 255, 0.5);
 
 .btn-img {
   max-width: 130px;
+}
 
+.btn-img-a {
+  max-width: 170px;
+  border-radius: 20px;
 }
 
 /* QUIZ:  */
