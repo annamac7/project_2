@@ -53,7 +53,12 @@ body {
   filter: invert();
   opacity: .3;
   left: 40px;
+  z-index: 1 !important;
   top: 30px;
+}
+
+#rbg-img {
+  z-index: 2000 !important;
 }
 
 #rbg {
@@ -64,6 +69,9 @@ body {
   z-index: 4;
 }
 
+#tl-container {
+  width: 50%;
+}
 
 .event__content {
   font-size: 12px;
@@ -80,9 +88,9 @@ body {
     margin: 48px 48px 20px 0px;
 }
 
-#slide2 {
-  max-width: 650px;
-
+.slide2 {
+  max-width: 500px;
+  margin-left: 15px;
 }
 
 #sl2-img {
@@ -98,7 +106,6 @@ body {
    background-repeat: repeat;
    background-position: center;
    background-size: cover;
-
  }
 
  #c1 {
@@ -122,11 +129,14 @@ body {
 #sl3-bg {
   opacity: .3;
   top: 0px;
-  right: 0px;
+  left: 0px;
   margin: 0px;
   width: 40%;
   filter: invert();
+
 }
+
+
 
 .flip-box {
   background-color: transparent;
@@ -158,7 +168,7 @@ body {
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-  border-radius: 10px;
+  border-radius: 20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -169,7 +179,7 @@ body {
 
 /* Style the front side */
 .flip-box-front {
-  background-color: lightblue;
+  background-color: aliceblue;
   color: #222;
 }
 
@@ -192,6 +202,7 @@ body {
 
 .btn-img {
   max-width: 130px;
+
 }
 
 /* QUIZ:  */

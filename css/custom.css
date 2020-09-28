@@ -20,7 +20,7 @@
 }
 
 .sl-slider h2 {
-  font-size: 82px;
+  font-size: 70px;
   font-family: 'Limelight', cursive;
 }
 
@@ -514,4 +514,23 @@ margin-bottom: 0;
   .sl-slider blockquote {
     font-size: 16px;
   }
+}
+
+
+@media screen and (max-width: 1024px) {
+
+  .slide2 {
+  max-width: 1024px !important
+  ;
+
+  text-align: center;
+
+  }
+  .slide2-cont{
+    justify-content: center !important;
+    display: flex;
+    flex-wrap: wrap;:
+  }
+
+
 }
