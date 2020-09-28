@@ -18,6 +18,7 @@
 
 .question {
     font-size: 1.25em;
+    color: #222;
 }
 
 .answers {
@@ -47,7 +48,7 @@
 
 #quiz-controls {
     background: #333;
-    color: #fff;
+    color: #222;
     padding: 0.5em 1em;
     text-align: center;
     border-radius: 10px;

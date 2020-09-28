@@ -131,46 +131,47 @@ $('#quiz').quiz({
   counterFormat: 'Question %current of %total',
   questions: [
     {
-      'q': 'Is jQuery required for this plugin?',
+      'q': 'Which US President appointed RBG to the Supreme Court',
       'options': [
-        'Yes',
-        'No'
-      ],
-      'correctIndex': 0,
-      'correctResponse': 'Good job, that was obvious.',
-      'incorrectResponse': 'Well, if you don\'t include it, your quiz won\'t work'
-    },
-    {
-      'q': 'How do you use it?',
-      'options': [
-        'Include jQuery, that\'s it!',
-        'Include jQuery and the plugin javascript.',
-        'Include jQuery, the plugin javascript, the optional plugin css, required markup, and the javascript configuration.'
+        'Obama',
+        'Bush Jr.',
+        'Clinton'
       ],
       'correctIndex': 2,
-      'correctResponse': 'Correct! Sounds more complicated than it really is.',
-      'incorrectResponse': 'Come on, it\'s not that easy!'
+      'correctResponse': 'Good job, Clinton appointed her in 1993',
+      'incorrectResponse': 'Nope, Clinton appointed her in 1993'
     },
     {
-      'q': 'The plugin can be configured to require a perfect score.',
+      'q': 'What Supreme Court Case legalized same-sex marriage?',
+      'options': [
+        'US v. Virginia',
+        'Obergefell v. Hodges',
+        'King v. Burwell'
+      ],
+      'correctIndex': 1,
+      'correctResponse': 'Correct! ',
+      'incorrectResponse': 'Incorrect, it was Obergefell v. Hodges'
+    },
+    {
+      'q': 'RBG was not the first women appointed to the SCOTUS ',
       'options': [
         'True',
         'False'
       ],
-      'correctIndex': 0,
-      'correctResponse': 'You\'re a genius! You just set allowIncorrect to true.',
-      'incorrectResponse': 'Why you have no faith!? Just set allowIncorrect to true.'
+      'correctIndex': 1,
+      'correctResponse': 'Correct, she was the second',
+      'incorrectResponse': 'Incorrect, the first was Sandra Day Oconnor, RBG was the second'
     },
     {
-      'q': 'How do you specify the questions and answers?',
+      'q': 'What was her famous statement in Bush v. Gore',
       'options': [
-        'MySQL database',
-        'In the HTML',
-        'In the javascript configuration'
+        'I, respectufully, dissent.',
+        'I dissent.',
+        'I do not agree.'
       ],
-      'correctIndex': 2,
-      'correctResponse': 'Correct! Refer to the documentation for the structure.',
-      'incorrectResponse': 'Wrong! Do it in the javascript configuration. You might need to read the documentation.'
+      'correctIndex': 1,
+      'correctResponse': 'Correct! ',
+      'incorrectResponse': 'Wrong! She dissented but left out the "respectfully"'
     }
   ]
 });
@@ -179,7 +180,7 @@ $(document).ready(
     function(){
         $("#modal-click").click(function () {
             $("#my-modal").toggle();
-            
+
 
         });
 

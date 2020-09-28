@@ -1,52 +1,49 @@
 @import url(http://fonts.googleapis.com/css?family=Lato:300,400,700);
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;500;700;800&display=swap');
 
-
 @font-face {
-    font-family: 'AnimalsNormal';
-    src: url('fonts/animals-webfont.eot');
-    src: url('fonts/animals-webfont.eot?#iefix') format('embedded-opentype'),
-         url('fonts/animals-webfont.woff') format('woff'),
-         url('fonts/animals-webfont.ttf') format('truetype'),
-         url('fonts/animals-webfont.svg#AnimalsNormal') format('svg');
-    font-weight: normal;
-    font-style: normal;
+  font-family: 'AnimalsNormal';
+  src: url('fonts/animals-webfont.eot');
+  src: url('fonts/animals-webfont.eot?#iefix') format('embedded-opentype'),
+    url('fonts/animals-webfont.woff') format('woff'),
+    url('fonts/animals-webfont.ttf') format('truetype'),
+    url('fonts/animals-webfont.svg#AnimalsNormal') format('svg');
+  font-weight: normal;
+  font-style: normal;
 }
 
-
-html { height: 100%; }
+html {
+  height: 100%;
+}
 
 *,
 *:after,
 *:before {
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-	padding: 0;
-	margin: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
 }
-
 
 /* Clearfix hack by Nicolas Gallagher: http://nicolasgallagher.com/micro-clearfix-hack/ */
 .clearfix:after {
-	content: "";
-	display: table;
-	clear: both;
+  content: "";
+  display: table;
+  clear: both;
 }
 
-
 body {
-    font-family: 'Raleway', sans-serif;
-    background: #fff;
-    font-weight: 300;
-    font-size: 15px;
-    color: white;
-    /* -webkit-font-smoothing: antialiased; */
+  font-family: 'Raleway', sans-serif;
+  background: #fff;
+  font-weight: 300;
+  font-size: 15px;
+  color: white;
+  /* -webkit-font-smoothing: antialiased; */
 }
 
 .text-content {
   max-width: 800px;
-
 }
 
 #sl1-bg {
@@ -65,7 +62,7 @@ body {
   color: goldenrod;
 }
 
-.slide-img{
+.slide-img {
   z-index: 4;
 }
 
@@ -88,7 +85,6 @@ body {
 #values ol li::before {
   content: counter(steps);
   margin-right: 0.5rem;
-
   background: aliceBlue;
   color: #222;
   width: 2em;
@@ -108,35 +104,38 @@ body {
 }
 
 .blurred {
-background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 #my-modal {
-  box-shadow: 4px 0px 33px 24px rgba(0,0,0,0.31);
-
+  box-shadow: 4px 0px 33px 24px rgba(0, 0, 0, 0.31);
 }
-
 
 .event__content {
   font-size: 12px;
 }
 
-
-
 .my-content {
-    padding-top: 0px;
-    margin: 60px 60px 0px 60px;
+  padding-top: 0px;
+  margin: 60px 60px 0px 60px;
 }
 
-
 .my-content h2 {
-    padding-top: 0px;
-    margin: 48px 48px 20px 0px;
+  padding-top: 0px;
+  margin: 48px 48px 20px 0px;
 }
 
 .slide2 {
   max-width: 500px;
   margin-left: 15px;
+}
+
+#slide2-bg-stars {
+  position: fixed;
+  opacity: .5;
+  right: 10px;
+  top: 20px;
+
 }
 
 #sl2-img {
@@ -145,33 +144,32 @@ background-color: rgba(255, 255, 255, 0.5);
   display: block;
 }
 
- .c-item  {
-   width: 400px;
-   height: 300px;
-   margin: auto;
-   background-repeat: repeat;
-   background-position: center;
-   background-size: cover;
- }
+.c-item {
+  width: 400px;
+  height: 300px;
+  margin: auto;
+  background-repeat: repeat;
+  background-position: center;
+  background-size: cover;
+}
 
- #c1 {
-   background-image: url("https://i2.wp.com/auburnexaminer.com/wp-content/uploads/2020/09/8b4bb49e52134efc4b7d4d4a8542f213.jpg?resize=1024%2C683&ssl=1") ;
- }
+#c1 {
+  background-image: url("https://i2.wp.com/auburnexaminer.com/wp-content/uploads/2020/09/8b4bb49e52134efc4b7d4d4a8542f213.jpg?resize=1024%2C683&ssl=1");
+}
 
- #c2 {
-   background-image: url("https://cdn.theatlantic.com/thumbor/FrV1GyxMe2kG28b6zKkTD87cWuI=/1200x810/media/img/photo/2020/09/photos-the-life-of-ruth-bader-ginsb/a09_50477273/original.jpg") ;
- }
+#c2 {
+  background-image: url("https://cdn.theatlantic.com/thumbor/FrV1GyxMe2kG28b6zKkTD87cWuI=/1200x810/media/img/photo/2020/09/photos-the-life-of-ruth-bader-ginsb/a09_50477273/original.jpg");
+}
 
- #c3 {
-   background-image: url("https://cdn.theatlantic.com/thumbor/xNaIbQnbp9W1aeujfoj1887bERw=/1200x814/media/img/photo/2020/09/photos-the-life-of-ruth-bader-ginsb/a12_R426743067/original.jpg");
- }
+#c3 {
+  background-image: url("https://cdn.theatlantic.com/thumbor/xNaIbQnbp9W1aeujfoj1887bERw=/1200x814/media/img/photo/2020/09/photos-the-life-of-ruth-bader-ginsb/a12_R426743067/original.jpg");
+}
 
 #c4 {
   background-image: url("https://cdn.theatlantic.com/thumbor/uToCqxg1JUHhd8kHkW0W96uE_9o=/1200x799/media/img/photo/2020/09/photos-the-life-of-ruth-bader-ginsb/a14_R1737435347/original.jpg");
 }
 
 /* ACHIEVEMENTS */
-
 #sl3-bg {
   opacity: .3;
   top: 0px;
@@ -179,24 +177,14 @@ background-color: rgba(255, 255, 255, 0.5);
   margin: 0px;
   width: 40%;
   filter: invert();
-
 }
-
-
 
 .flip-box {
   background-color: transparent;
   width: 250px;
   height: 200px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
-}
-
-
-.flip-box-a {
-  background-color: transparent;
-  width: 250px;
-  height: 250px;
-  perspective: 1000px; /* Remove this if you don't want the 3D effect */
+  perspective: 1000px;
+  /* Remove this if you don't want the 3D effect */
 }
 
 /* This container is needed to position the front and back side */
@@ -210,20 +198,21 @@ background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* Do an horizontal flip when you move the mouse over the flip box container */
-.flip-box:hover .flip-box-inner, .flip-box-a:hover .flip-box-inner {
-  transform: rotateY(180deg);
-}
 .flip-box:hover .flip-box-inner {
   transform: rotateY(180deg);
 }
 
+.flip-box:hover .flip-box-inner {
+  transform: rotateY(180deg);
+}
 
 /* Position the front and back side */
 .flip-box-front, .flip-box-back {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
+  -webkit-backface-visibility: hidden;
+  /* Safari */
   backface-visibility: hidden;
   border-radius: 20px;
   display: flex;
@@ -233,37 +222,77 @@ background-color: rgba(255, 255, 255, 0.5);
   padding: 15px;
 }
 
-.flip-box-front-a, .flip-box-back-a {
+.box-a {
+  background-color: transparent;
+  width: 250px;
+
+  height: 250px;
+}
+
+.box-img {
+  width: 30%;
+  display: none;
+}
+
+.box-front-a {
   position: absolute;
   width: 100%;
   height: 100%;
-  -webkit-backface-visibility: hidden; /* Safari */
-  backface-visibility: hidden;
+  /* top: 25%;
+  left: 25%; */
   border-radius: 50%;
   display: flex;
   flex-wrap: wrap;
-  border: darkgoldenrod solid 8px;
+  box-shadow: 4px 0px 18px 2px rgba(0, 0, 0, 0.25);
+
   align-items: center;
   justify-content: center;
   padding: 15px;
+  background: lightsteelblue;
+  color: #444;
+  transition: all .3s ease-in-out;
+}
 
+.box-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+.box-front-a:hover {
+  border-radius: 8px;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+
+.box-front-a:hover h5 {
+  display: none;
+}
+
+.box-text-replace {
+  display: none;
+}
+
+.box-front-a:hover .box-img, .box-front-a:hover .box-text-replace{
+  display: block !important;
+  margin: 4px;
 }
 
 /* Style the front side */
+.flip-box-front h5 {
+  font-weight: normal;
+  color: #222;
+  text-transform: uppercase;
+}
+
 .flip-box-front {
   background-color: aliceblue;
   color: #222;
-}
-
-.flip-box-front-a {
-  background: goldenrod;
-  color: #222;
-}
-
-.flip-box-back-a {
-  background: darkgoldenrod;
-  color: #222;
-  transform: rotateY(180deg);
 }
 
 /* Style the back side */
@@ -272,7 +301,6 @@ background-color: rgba(255, 255, 255, 0.5);
   color: #222;
   transform: rotateY(180deg);
 }
-
 
 .dropdown .btn {
   background: lightblue;
@@ -293,20 +321,17 @@ background-color: rgba(255, 255, 255, 0.5);
 }
 
 /* QUIZ:  */
-
-#quiz-container {
-
-}
+#quiz-container {}
 
 #quiz {
   background-color: lightblue;
   border-radius: 10px;
-
 }
 
 #quiz-start-btn {
-background: #7698AF;
+  background: #7698AF;
 }
+
 .answers a.correct {
   background: #8CE955;
 }

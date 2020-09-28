@@ -44,7 +44,7 @@
           <div class="sl-slide-inner container-fluid d-flex justify-content-around flex-wrap-reverse align-items-center">
 
             <div class="text-content">
-              <h2>NOTORIOUS <span id="rbg">RBG</span></h2>
+              <h2 class="animate__zoomInDown">NOTORIOUS <span id="rbg">RBG</span></h2>
               <blockquote>
                 <p>"Fight for the things that you care about, but do it in a way that will lead others to join you."</p><cite>Ruth Bader Ginsburg</cite>
               </blockquote>
@@ -59,10 +59,10 @@
         <!-- SLIDE 2 -->
         <div class="sl-slide sl-slide-color-2" data-orientation="horizontal" data-slice1-rotation="-5" data-slice2-rotation="10" data-slice1-scale="2" data-slice2-scale="1">
           <div class="sl-slide-inner container-fluid d-flex justify-content-center align-items-center flex-wrap">
-
+            <img id="slide2-bg-stars" src="https://boysandgirls.org/wp-content/uploads/2018/04/Big-stars.png" alt="stars" />
             <h2>FAST FACTS</h2>
 
-            <div id="values">
+            <div class="animate__zoomInDown animate__delay-2s" id="values">
               <ol>
                 <li>
                   Second women to be appointed to the SCOTUS, confirmed by senate 96-3
@@ -71,7 +71,7 @@
                   Favored gender equality, workers' rights, seperation of church and state
                 </li>
                 <li>
-                  Part of the SCOTUS’s moderate-liberal bloc. <a id="modal-click" class="text-light font-italic" href="#">Learn more about the SCOTUS's makeup</a>
+                  Part of the SCOTUS’s moderate-liberal bloc. <a id="modal-click" class="text-warning font-italic" href="#">Learn more about the SCOTUS's makeup</a>
                 </li>
               </ol>
               <div id="my-modal">
@@ -80,9 +80,6 @@
             </div>
           </div>
         </div>
-
-
-
 
         <!-- SLIDE 3 -->
 
@@ -127,9 +124,6 @@
             </div>
           </div>
         </div>
-
-
-
 
         <!-- SLIDE 4 -->
 
@@ -209,75 +203,80 @@
         <!-- slide 5 -->
 
         <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="-5" data-slice2-rotation="25" data-slice1-scale="2" data-slice2-scale="1">
-          <div class="sl-slide-inner container-fluid d-flex justify-content-between flex-wrap slide2-cont">
+          <div class="sl-slide-inner container-fluid d-flex justify-content-between flex-wrap   slide2-cont">
+
 
             <!-- <div class="bg-img-1 bg-img"></div> -->
             <div class="slide2">
 
-              <h2>TOP COURT CASES</h2>
+              <h2>LEGACY</h2>
               <blockquote class="quote-h">
-                <p>RBG served on the United States Supreme Court for 27 years, during which she heard many historic cases. Toggle the cards below to learn more.</p>
+                <p>During her time on the Supreme Court, RBG did so much more than just decide important cases. Learn more about <i>some</i> of her many achievements.</p>
               </blockquote>
-              <img class="w-75 mx-auto d-block" src="https://cdn.abcotvs.com/dip/images/6449282_091920-cc-SCOTUS-2017-img.jpg?w=800&r=16%3A9" />
+                <img class="w-75 mx-auto d-block" src="https://cdn.vox-cdn.com/thumbor/ZXcmjHRWEIE4M-6OX9kJlyU4MXc=/0x0:3744x2496/1200x800/filters:focal(1573x949:2171x1547)/cdn.vox-cdn.com/uploads/chorus_image/image/67436205/GettyImages_1200431169.0.jpg" alt="womens rights march poster" />
+
             </div>
             <div class="w-50 mx-auto d-flex align-items-center">
               <div class=" d-flex justify-content-center flex-wrap mx-auto">
                 <!-- https://www.w3schools.com/howto/howto_css_flip_box.asp -->
 
-                <div class="flip-box-a m-3">
-                  <div class="flip-box-inner">
-                    <div class="flip-box-front-a">
-                      <img class="btn-img" src="https://www.flaticon.com/svg/static/icons/svg/2232/2232589.svg" alt="book cover" />
+                <!-- BOX 1 -->
+                <div class="box-a m-3" id="box1">
+                  <div class="box-inner">
+                    <div class="box-front-a">
+                      <img class="box-img"src="https://d1w7fb2mkkr3kw.cloudfront.net/assets/images/book/lrg/9781/5011/9781501145254.jpg" alt="Autobiography cover" />
                       <h5>Books and Movie</h5>
-                    </div>
-                    <div class="flip-box-back-a">
-                      <p></p>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- #2 -->
-                <div class="flip-box-a m-3">
-                  <div class="flip-box-inner">
-                    <div class="flip-box-front-a">
-                      <img class="btn-img" src="https://vignette.wikia.nocookie.net/logopedia/images/2/2e/2015_0902_SNL_Logo-Abbreviated_Color02_NW.png/revision/latest/scale-to-width-down/340?cb=20151004155610" alt="snl logo" />
-                      <h5>In pop culture
-                      </h5>
-
-                    </div>
-                    <div class="flip-box-back-a">
-                      <img src="https://i.ytimg.com/vi/XhzSd-Kz-zA/maxresdefault.jpg" class="btn-img" alt="kate mckinnon snl" />
-                      <p></p>
+                      <p class="box-text-replace">
+                        2016 memoir, <i>In My Own Words</i>, was a NYT bestseller. Two films covering her life, <i>On the Basis of Sex</i> and <i>RBG</i> were box-office successes
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                <!-- #3 -->
-                <div class="flip-box-a m-3">
-                  <div class="flip-box-inner">
-                    <div class="flip-box-front-a">
-                      <img class="btn-img-a" src="https://rockefeller.dartmouth.edu/sites/rockefeller.drupalmulti-prod.dartmouth.edu/files/styles/slideshow_image/public/screen_shot_2019-10-15_at_10.36.03_pm.png?itok=JgWeQT11" alt="affordable care act" />
-
+                <!-- BOX 2 -->
+                <div class="box-a m-3" id="box1">
+                  <div class="box-inner">
+                    <div class="box-front-a">
+                      <img class="box-img w-50"src="https://i.ytimg.com/vi/XhzSd-Kz-zA/maxresdefault.jpg" alt="snl skits featuring rbg" />
+                      <h5>Popular Culture</h5>
+                      <p class="box-text-replace">
+                        Kate McKinnon's portrayl on SNL became a regular bit. She has several cameos in TV and movies. Samuel Adamas also had a limited-edition beer in her honor.
+                      </p>
                     </div>
-                    <div class="flip-box-back-a">
-                      <a href="https://www.aclu.org/other/about-aclu-womens-rights-project"class="text-white font-weight-bold">ACLU WOMEN'S RIGHTS PROJECT </a>
-                      <p></p>
+                  </div>
+                </div>
+
+                <!-- BOX 3 -->
+                <div class="box-a m-3" id="box1">
+                  <div class="box-inner">
+                    <div class="box-front-a">
+                      <img class="box-img w-75"src="https://www.gannett-cdn.com/presto/2020/09/24/USAT/df465a05-105f-483c-b6da-cdecca4e328a-RBG_topper.jpg?crop=2548,1433,x504,y0" />
+                      <h5>Women's Rights</h5>
+                      <p class="box-text-replace">
+                        Started the ACLU Women’s Rights Project, and is an infamous figure in the women's rights movement
+                      </p>
                     </div>
                   </div>
                 </div>
 
-                <!-- #4 -->
-                <div class="flip-box-a m-3">
-                  <div class="flip-box-inner">
-                    <div class="flip-box-front-a">
-                      <img class="btn-img" src="https://brillmedia.co/wp-content/uploads/2019/02/Forbes-Logo.png.webp" alt="pride flag" />
-                      <h5></h5>
-                    </div>
-                    <div class="flip-box-back-a">
-                      <p>Court case that made same-sex legal in all 50 states</p>
+                <div class="box-a m-3" id="box1">
+                  <div class="box-inner">
+                    <div class="box-front-a">
+
+                      <h5>Honors & Awards</h5>
+                      <p class="box-text-replace">
+
+                          - Forbes 100 Most Powerful Women (2004-2011)<br /><br />
+                          - The American Bar Association’s Thurgood Marshall Award  (1999)<br /><br />
+                          - National Women's Hall of Fame  (2002)
+
+
+                      </p>
                     </div>
                   </div>
                 </div>
+
+
               </div>
             </div>
           </div>
@@ -289,18 +288,13 @@
         <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
           <div class="sl-slide-inner container-fluid d-flex justify-content-around flex-wrap align-items-center">
             <!-- <div class="bg-img-1 bg-img"></div> -->
-            <div class="text-content">
-              <h2>TEST</h2>
-              <blockquote class="quote-h">
-                <p><strong>[sub-header]</strong>You have just dined, and however scrupulously the slaughterhouse is concealed in the graceful distance of miles, there is complicity.</p>
-              </blockquote>
-            </div>
+
             <div id="quiz-container" class="flex-fill m-4">
 
               <div id="quiz" class="w-100">
                 <div id="quiz-header">
-                  <h1>jQuery Quiz Plugin</h1>
-                  <p>A quiz about the plugin built by the plugin.</p>
+                  <h2>FINAL QUIZ</h2>
+                  <p>Test your new knowledge</p>
                 </div>
                 <div id="quiz-start-screen">
                   <p><a href="#" id="quiz-start-btn" class="quiz-button">Start</a></p>
