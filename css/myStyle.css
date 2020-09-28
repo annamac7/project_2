@@ -62,7 +62,7 @@ body {
 }
 
 #rbg {
-  color: navy;
+  color: goldenrod;
 }
 
 .slide-img{
@@ -73,9 +73,55 @@ body {
   width: 50%;
 }
 
+#values ol {
+  list-style: none;
+  counter-reset: steps
+}
+
+#values ol li {
+  counter-increment: steps;
+  margin: 20px;
+  font-size: 24px;
+  max-width: 1000px;
+}
+
+#values ol li::before {
+  content: counter(steps);
+  margin-right: 0.5rem;
+
+  background: aliceBlue;
+  color: #222;
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  display: inline-grid;
+  place-items: center;
+  line-height: 1.2em;
+}
+
+#my-modal {
+  display: none;
+  position: absolute;
+  top: 25%;
+  max-width: 500px;
+  left: 30%;
+}
+
+.blurred {
+background-color: rgba(255, 255, 255, 0.5);
+}
+
+#my-modal {
+  box-shadow: 4px 0px 33px 24px rgba(0,0,0,0.31);
+
+}
+
+
 .event__content {
   font-size: 12px;
 }
+
+
 
 .my-content {
     padding-top: 0px;

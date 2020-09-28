@@ -174,3 +174,13 @@ $('#quiz').quiz({
     }
   ]
 });
+
+$(document).ready(
+    function(){
+        $("#modal-click").click(function () {
+            $("#my-modal").toggle();
+            
+
+        });
+
+    });
